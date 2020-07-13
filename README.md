@@ -1,2 +1,1 @@
-# java-program
-整理java开发的一些笔记
+# 记录Java开发路上的一些笔记
