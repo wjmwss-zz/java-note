@@ -28,6 +28,5 @@ fff | ggg| hhh | iii | 000|
 # 三 具体标题
 
 源码地址：[我的GitHub](https://github.com/wjmwss/java-design-pattern)  
-参考资料主要有：  
-* [技术文档1](https://mp.weixin.qq.com/s/CEjsRLlQlP0BZpNroCJ2uQ)  
-* [技术文档2](https://mp.weixin.qq.com/s/8I-yHFrSNJJPol8McyzhMA)
+参考资料：  
+* [技术文档](www.wjm.com)  
