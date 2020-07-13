@@ -5,3 +5,7 @@ target/*
 
 /java-design-pattern/target/*
 /java-base/target/*
+
+*.iml
+java-base/*.iml
+java-design-pattern/*.iml
