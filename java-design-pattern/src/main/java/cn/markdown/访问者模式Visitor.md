@@ -302,5 +302,4 @@ public class OverdueVisitor implements Visitor {
 >* 巧妙地用双派发解决了方法重载的多态派发问题；
 >* 数据资源（接收者，例如pojo）与业务（访问者，例如Service）彻底解耦，使得业务处理集中化、多态化、亦可扩展；作为数据资源，不应该多才多艺；
 
-源码地址：[我的GitHub](https://github.com/wjmwss/java-design-pattern)  
-笔记整理来源：[技术文档](https://mp.weixin.qq.com/s/wa5F8uwJtrXJSzoQU8XSJw)
+源码地址：[我的GitHub](https://github.com/wjmwss/java-program/tree/master/java-design-pattern)  

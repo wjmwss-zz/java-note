@@ -11,5 +11,7 @@
 >   * producer + product = 设计模式所有代码，用Test类进行应用；
 >* uml：设计模式的UML图汇总；
   
+# 三 参考资料  
+* [设计模式内容聚合](https://mp.weixin.qq.com/s/XLyvUBftV2UFamvWyYIIRw)  
   
 持续更新中...

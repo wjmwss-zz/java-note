@@ -425,7 +425,4 @@ public class SteakFactory implements Factory {
 ## 3 总结
 >使用各族工厂对种类繁多的产品进行了划分、归类，产品虽然繁多，但总得有等级、品牌、型号之分，以各族工厂和产品线划界，分而治之，***横向拆分产品家族，纵向则拆分产品等级***。
 
-源码地址：[我的GitHub](https://github.com/wjmwss/java-design-pattern)  
-笔记整理来源：  
-* [技术文档1](https://mp.weixin.qq.com/s/CEjsRLlQlP0BZpNroCJ2uQ)  
-* [技术文档2](https://mp.weixin.qq.com/s/8I-yHFrSNJJPol8McyzhMA)
+源码地址：[我的GitHub](https://github.com/wjmwss/java-program/tree/master/java-design-pattern)  
