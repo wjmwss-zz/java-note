@@ -1,0 +1,7 @@
+.idea/*
+.DS_Store
+out/*
+target/*
+
+/java-design-pattern/target/*
+/java-base/target/*
