@@ -1,4 +1,4 @@
-package cn.pattern.factory.simple.product;
+package cn.pattern.创建型.factory.simple.product;
 
 /**
  * 产出物：樱桃

@@ -1,9 +1,9 @@
-package cn.pattern.factory.abstracts;
+package cn.pattern.创建型.factory.abstracts;
 
-import cn.pattern.factory.abstracts.producer.Factory;
-import cn.pattern.factory.abstracts.producer.FruitFactory;
-import cn.pattern.factory.abstracts.producer.SteakFactory;
-import cn.pattern.factory.abstracts.product.Food;
+import cn.pattern.创建型.factory.abstracts.producer.Factory;
+import cn.pattern.创建型.factory.abstracts.producer.FruitFactory;
+import cn.pattern.创建型.factory.abstracts.producer.SteakFactory;
+import cn.pattern.创建型.factory.abstracts.product.Food;
 
 /**
  * 抽象工厂模式应用

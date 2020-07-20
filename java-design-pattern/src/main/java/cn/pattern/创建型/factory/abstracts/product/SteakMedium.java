@@ -1,4 +1,4 @@
-package cn.pattern.factory.abstracts.product;
+package cn.pattern.创建型.factory.abstracts.product;
 
 /**
  * 产出物：二级牛排

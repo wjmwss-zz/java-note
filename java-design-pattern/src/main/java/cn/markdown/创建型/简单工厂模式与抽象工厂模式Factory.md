@@ -6,11 +6,11 @@
 ## 2 使用示例
 >阅读笔记时，应先从产品（即main方法）出发，了解产物是如何运作的，从而反推设计；  
 ```
-package cn.pattern.factory;
+package cn.pattern.创建型.factory;
 
-import cn.pattern.factory.simple.producer.AppleFactory;
-import cn.pattern.factory.simple.producer.CherryFactory;
-import cn.pattern.factory.simple.product.Food;
+import cn.pattern.创建型.factory.simple.producer.AppleFactory;
+import cn.pattern.创建型.factory.simple.producer.CherryFactory;
+import cn.pattern.创建型.factory.simple.product.Food;
 
 /**
  * 简单工厂模式应用
@@ -39,7 +39,7 @@ public class Test {
 
 >接下来是工厂模式要生产对象的介绍；
 ```
-package cn.pattern.factory.simple.product;
+package cn.pattern.创建型.factory.simple.product;
 
 /**
  * 产出物：食品接口
@@ -55,7 +55,7 @@ public interface Food {
 }
 ```
 ```
-package cn.pattern.factory.simple.product;
+package cn.pattern.创建型.factory.simple.product;
 
 /**
  * 产出物：苹果
@@ -71,7 +71,7 @@ public class Apple implements Food {
 }
 ```
 ```
-package cn.pattern.factory.simple.product;
+package cn.pattern.创建型.factory.simple.product;
 
 /**
  * 产出物：樱桃
@@ -88,9 +88,9 @@ public class Cherry implements Food {
 ```
 >接下来对简单工厂模式中工厂的介绍；
 ```
-package cn.pattern.factory.simple.producer;
+package cn.pattern.创建型.factory.simple.producer;
 
-import cn.pattern.factory.simple.product.Food;
+import cn.pattern.创建型.factory.simple.product.Food;
 
 /**
  * 生产者：工厂
@@ -108,10 +108,10 @@ public interface Factory {
 }
 ```
 ```
-package cn.pattern.factory.simple.producer;
+package cn.pattern.创建型.factory.simple.producer;
 
-import cn.pattern.factory.simple.product.Apple;
-import cn.pattern.factory.simple.product.Food;
+import cn.pattern.创建型.factory.simple.product.Apple;
+import cn.pattern.创建型.factory.simple.product.Food;
 
 /**
  * 生产苹果的工厂
@@ -127,10 +127,10 @@ public class AppleFactory implements Factory {
 }
 ```
 ```
-package cn.pattern.factory.simple.producer;
+package cn.pattern.创建型.factory.simple.producer;
 
-import cn.pattern.factory.simple.product.Cherry;
-import cn.pattern.factory.simple.product.Food;
+import cn.pattern.创建型.factory.simple.product.Cherry;
+import cn.pattern.创建型.factory.simple.product.Food;
 
 /**
  * 生产樱桃的工厂
@@ -169,12 +169,12 @@ public class CherryFactory implements Factory {
 
 >阅读笔记时，应先从产品（即main方法）出发，了解产物是如何运作的，从而反推设计；  
 ```
-package cn.pattern.factory.abstracts;
+package cn.pattern.创建型.factory.abstracts;
 
-import cn.pattern.factory.abstracts.producer.Factory;
-import cn.pattern.factory.abstracts.producer.FruitFactory;
-import cn.pattern.factory.abstracts.producer.SteakFactory;
-import cn.pattern.factory.abstracts.product.Food;
+import cn.pattern.创建型.factory.abstracts.producer.Factory;
+import cn.pattern.创建型.factory.abstracts.producer.FruitFactory;
+import cn.pattern.创建型.factory.abstracts.producer.SteakFactory;
+import cn.pattern.创建型.factory.abstracts.product.Food;
 
 /**
  * 抽象工厂模式应用
@@ -211,7 +211,7 @@ public class Test {
 
 >接下来是工厂模式要生产对象的介绍；
 ```
-package cn.pattern.factory.abstracts.product;
+package cn.pattern.创建型.factory.abstracts.product;
 
 /**
  * 产出物：食品接口
@@ -227,7 +227,7 @@ public interface Food {
 }
 ```
 ```
-package cn.pattern.factory.abstracts.product;
+package cn.pattern.创建型.factory.abstracts.product;
 
 /**
  * 产出物：一级水果
@@ -243,7 +243,7 @@ public class FruitBest implements Food {
 }
 ```
 ```
-package cn.pattern.factory.abstracts.product;
+package cn.pattern.创建型.factory.abstracts.product;
 
 /**
  * 产出物：二级水果
@@ -259,7 +259,7 @@ public class FruitMedium implements Food {
 }
 ```
 ```
-package cn.pattern.factory.abstracts.product;
+package cn.pattern.创建型.factory.abstracts.product;
 
 /**
  * 产出物：三级水果
@@ -275,7 +275,7 @@ public class FruitWorst implements Food{
 }
 ```
 ```
-package cn.pattern.factory.abstracts.product;
+package cn.pattern.创建型.factory.abstracts.product;
 
 /**
  * 产出物：一级牛排
@@ -291,7 +291,7 @@ public class SteakBest implements Food{
 }
 ```
 ```
-package cn.pattern.factory.abstracts.product;
+package cn.pattern.创建型.factory.abstracts.product;
 
 /**
  * 产出物：二级牛排
@@ -307,7 +307,7 @@ public class SteakMedium implements Food{
 }
 ```
 ```
-package cn.pattern.factory.abstracts.product;
+package cn.pattern.创建型.factory.abstracts.product;
 
 /**
  * 产出物：三级牛排
@@ -324,9 +324,9 @@ public class SteakWorst implements Food{
 ```
 >接下来对抽象工厂模式中工厂的介绍；
 ```
-package cn.pattern.factory.abstracts.producer;
+package cn.pattern.创建型.factory.abstracts.producer;
 
-import cn.pattern.factory.abstracts.product.Food;
+import cn.pattern.创建型.factory.abstracts.product.Food;
 
 /**
  * 生产者：工厂
@@ -358,12 +358,12 @@ public interface Factory {
 }
 ```
 ```
-package cn.pattern.factory.abstracts.producer;
+package cn.pattern.创建型.factory.abstracts.producer;
 
-import cn.pattern.factory.abstracts.product.Food;
-import cn.pattern.factory.abstracts.product.FruitBest;
-import cn.pattern.factory.abstracts.product.FruitMedium;
-import cn.pattern.factory.abstracts.product.FruitWorst;
+import cn.pattern.创建型.factory.abstracts.product.Food;
+import cn.pattern.创建型.factory.abstracts.product.FruitBest;
+import cn.pattern.创建型.factory.abstracts.product.FruitMedium;
+import cn.pattern.创建型.factory.abstracts.product.FruitWorst;
 
 /**
  * 生产者：不同级别的水果
@@ -390,12 +390,12 @@ public class FruitFactory implements Factory{
 }
 ```
 ```
-package cn.pattern.factory.abstracts.producer;
+package cn.pattern.创建型.factory.abstracts.producer;
 
-import cn.pattern.factory.abstracts.product.Food;
-import cn.pattern.factory.abstracts.product.SteakBest;
-import cn.pattern.factory.abstracts.product.SteakMedium;
-import cn.pattern.factory.abstracts.product.SteakWorst;
+import cn.pattern.创建型.factory.abstracts.product.Food;
+import cn.pattern.创建型.factory.abstracts.product.SteakBest;
+import cn.pattern.创建型.factory.abstracts.product.SteakMedium;
+import cn.pattern.创建型.factory.abstracts.product.SteakWorst;
 
 /**
  * 生产者：不同级别的牛排

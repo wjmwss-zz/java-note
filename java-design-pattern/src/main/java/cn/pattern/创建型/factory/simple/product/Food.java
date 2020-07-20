@@ -1,10 +1,10 @@
-package cn.pattern.factory.abstracts.product;
+package cn.pattern.创建型.factory.simple.product;
 
 /**
  * 产出物：食品接口
  *
  * @author:wjm
- * @date:2020/7/1 20:24
+ * @date:2020/6/30 22:50
  */
 public interface Food {
     /**

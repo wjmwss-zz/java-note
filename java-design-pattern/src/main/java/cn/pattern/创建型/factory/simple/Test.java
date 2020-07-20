@@ -1,8 +1,8 @@
-package cn.pattern.factory.simple;
+package cn.pattern.创建型.factory.simple;
 
-import cn.pattern.factory.simple.producer.AppleFactory;
-import cn.pattern.factory.simple.producer.CherryFactory;
-import cn.pattern.factory.simple.product.Food;
+import cn.pattern.创建型.factory.simple.producer.AppleFactory;
+import cn.pattern.创建型.factory.simple.producer.CherryFactory;
+import cn.pattern.创建型.factory.simple.product.Food;
 
 /**
  * 简单工厂模式应用
