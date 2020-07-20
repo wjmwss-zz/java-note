@@ -1,4 +1,4 @@
-package cn.pattern.factory.abstract_factory.product;
+package cn.pattern.factory.abstracts.product;
 
 /**
  * 产出物：一级水果

@@ -1,7 +1,7 @@
-package cn.pattern.factory.simple_factory.producer;
+package cn.pattern.factory.simple.producer;
 
-import cn.pattern.factory.simple_factory.product.Cherry;
-import cn.pattern.factory.simple_factory.product.Food;
+import cn.pattern.factory.simple.product.Cherry;
+import cn.pattern.factory.simple.product.Food;
 
 /**
  * 生产者：樱桃

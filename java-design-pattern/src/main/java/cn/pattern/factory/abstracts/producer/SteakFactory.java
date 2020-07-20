@@ -1,9 +1,9 @@
-package cn.pattern.factory.abstract_factory.producer;
+package cn.pattern.factory.abstracts.producer;
 
-import cn.pattern.factory.abstract_factory.product.Food;
-import cn.pattern.factory.abstract_factory.product.SteakBest;
-import cn.pattern.factory.abstract_factory.product.SteakMedium;
-import cn.pattern.factory.abstract_factory.product.SteakWorst;
+import cn.pattern.factory.abstracts.product.Food;
+import cn.pattern.factory.abstracts.product.SteakBest;
+import cn.pattern.factory.abstracts.product.SteakMedium;
+import cn.pattern.factory.abstracts.product.SteakWorst;
 
 /**
  * 生产者：不同级别的牛排

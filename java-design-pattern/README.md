@@ -12,6 +12,8 @@
 >* uml：设计模式的UML图汇总；
   
 # 三 参考资料  
-* [设计模式内容聚合](https://mp.weixin.qq.com/s/XLyvUBftV2UFamvWyYIIRw)  
+* [设计模式内容聚合](https://mp.weixin.qq.com/s/XLyvUBftV2UFamvWyYIIRw)    
+* [设计模式UML类图](https://www.cnblogs.com/zytrue/p/8484806.html)  
+
   
 持续更新中...

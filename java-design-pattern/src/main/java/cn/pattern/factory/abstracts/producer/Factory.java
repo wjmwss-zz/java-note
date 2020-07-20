@@ -1,6 +1,6 @@
-package cn.pattern.factory.abstract_factory.producer;
+package cn.pattern.factory.abstracts.producer;
 
-import cn.pattern.factory.abstract_factory.product.Food;
+import cn.pattern.factory.abstracts.product.Food;
 
 /**
  * 生产者：工厂

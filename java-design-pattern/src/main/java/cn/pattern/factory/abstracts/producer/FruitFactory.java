@@ -1,9 +1,9 @@
-package cn.pattern.factory.abstract_factory.producer;
+package cn.pattern.factory.abstracts.producer;
 
-import cn.pattern.factory.abstract_factory.product.Food;
-import cn.pattern.factory.abstract_factory.product.FruitBest;
-import cn.pattern.factory.abstract_factory.product.FruitMedium;
-import cn.pattern.factory.abstract_factory.product.FruitWorst;
+import cn.pattern.factory.abstracts.product.Food;
+import cn.pattern.factory.abstracts.product.FruitBest;
+import cn.pattern.factory.abstracts.product.FruitMedium;
+import cn.pattern.factory.abstracts.product.FruitWorst;
 
 /**
  * 生产者：不同级别的水果
