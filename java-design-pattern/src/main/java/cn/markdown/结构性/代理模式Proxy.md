@@ -10,7 +10,7 @@
 package cn.http.test;
 
 /**
- * 人的行为
+ * 真实角色与代理角色共同的行为
  *
  * @author:wjm
  * @date:2020/6/29 22:31
@@ -55,7 +55,7 @@ package cn.http.test;
  */
 public class BusProxy implements Events {
     /**
-     * 代理需要持有被代理对象的引用
+     * 代理需要持有真实角色
      */
     private People people;
 
@@ -67,8 +67,8 @@ public class BusProxy implements Events {
     }
 
     /**
-     * 代理对象 与 被代理对象 实现同一接口；<p>
-     * 代理对象实现接口方法，先增加代理行为，再调用 被代理对象 的接口方法实现
+     * 代理角色 与 真实角色 实现同一接口；<p>
+     * 代理对象实现接口方法，先增加代理行为，再调用 真实角色     的接口方法实现
      */
     @Override
     public void sign() {
