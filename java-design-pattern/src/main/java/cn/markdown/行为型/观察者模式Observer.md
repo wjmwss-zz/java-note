@@ -61,7 +61,7 @@ public class BusinessSubject extends Subject {
     /**
      * 具体业务，处理完后通知所有观察者
      */
-    public void bussiness() {
+    public void notifyAllBusinessObserver() {
         System.out.println("do something...");
         super.notifyAllObserver();
     }
@@ -156,7 +156,7 @@ public class Test {
         subject.add(test3Observer);
 
         //具体业务执行完毕后，会通知所有观察者
-        subject.bussiness();
+        subject.notifyAllBusinessObserver();
     }
 }
 ```

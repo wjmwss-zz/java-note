@@ -112,10 +112,12 @@ import java.util.List;
  */
 public class Editor {
     private Doc doc;
+    
     /**
      * 历史文档记录列表
      */
     private List<DocHistory> historyRecords;
+
     /**
      * 当前记录到历史记录的位置
      */

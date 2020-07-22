@@ -9,7 +9,7 @@
 package cn.http.test;
 
 /**
- * 运算的策略标准
+ * 策略
  *
  * @author:wjm
  * @date:2020/6/16 18:26
@@ -61,7 +61,7 @@ public class Subtraction implements Strategy {
 package cn.http.test;
 
 /**
- * 计算器
+ * 计算器（策略的使用者）
  *
  * @author:wjm
  * @date:2020/6/16 18:26
@@ -95,6 +95,7 @@ package cn.http.test;
  */
 public class Test {
     public static void main(String[] args) {
+        //绑定策略的使用者，通过策略的使用者使用策略
         //注入加法运算策略实现类，实现加法运算
         Calculator calculator = new Calculator();
         calculator.setStrategy(new Addition());

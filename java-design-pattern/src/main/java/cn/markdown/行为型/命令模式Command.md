@@ -3,10 +3,10 @@
 >在介绍命令模式前，先回顾一下策略模式：  
 >在策略模式中，定义好策略后，策略需要绑定其策略的使用者，用户需通过策略使用者来调用策略的功能；在这种模式中，策略与策略的使用者是强绑定的，当策略使用者的需求变得复杂后，需要不断的修改原有策略来满足复杂的需求，这不符合设计模式开闭原则；
 
->命令模式：在发令者与执行者（策略使用者）中加入命令模块（不同的策略接口与不同的策略使用者接口绑定），而达到将策略与策略使用者***彻底解耦***的目的；
+>命令模式：在发令者（策略使用者）与执行者（策略）中加入命令模块（不同的策略接口与不同的策略使用者接口绑定），而达到将策略与策略使用者***彻底解耦***的目的；
 
 # 二 使用示例
->定义命令的执行者（设备、电器）；
+>定义策略；
 ```
 package cn.http.test;
 
@@ -37,7 +37,7 @@ package cn.http.test;
  * @author:wjm
  * @date:2020/7/5 15:20
  */
-public interface Device extends Electric{
+public interface Device extends Electric {
     /**
      * 频道+
      */
@@ -146,12 +146,12 @@ public class Radio implements Device {
 }
 ```
 
->定义命令模块；
+>定义策略使用者；
 ```
 package cn.http.test;
 
 /**
- * 定义命令模块，把设备的所有功能抽象为执行命令、反执行命令
+ * 命令模块，把设备的所有功能抽象为执行命令、反执行命令
  *
  * @author:wjm
  * @date:2020/7/5 15:20
@@ -179,7 +179,7 @@ package cn.http.test;
  */
 public class ElectricCommand implements Command {
     /**
-     * 命令模块绑定要使用的设备，从而将执行者（具体设备）与发令者（使用设备功能的一方）彻底解耦
+     * 命令模块绑定要使用的设备，从而将策略与策略使用者彻底解耦
      */
     private Device device;
 
@@ -209,7 +209,7 @@ package cn.http.test;
  */
 public class ChannelCommand implements Command {
     /**
-     * 命令模块绑定要使用的设备，从而将执行者（具体设备）与发令者（使用设备功能的一方）彻底解耦
+     * 命令模块绑定要使用的设备，从而将策略与策略使用者彻底解耦
      */
     private Device device;
 
@@ -239,7 +239,7 @@ package cn.http.test;
  */
 public class VolumeCommand implements Command {
     /**
-     * 命令模块绑定要使用的设备，从而将执行者（具体设备）与发令者（使用设备功能的一方）彻底解耦
+     * 命令模块绑定要使用的设备，从而将策略与策略使用者彻底解耦
      */
     private Device device;
 
@@ -259,7 +259,7 @@ public class VolumeCommand implements Command {
 }
 ```
 
->定义发令者；
+>定义一个策略使用者中的使用者；
 ```
 package cn.http.test;
 
@@ -275,7 +275,6 @@ public class CommandController {
     Command volumeCommand;
 
     /*绑定命令*/
-
     public void bindElectricCommand(Command electricCommand) {
         this.electricCommand = electricCommand;
     }
@@ -289,7 +288,6 @@ public class CommandController {
     }
 
     /*发送命令*/
-
     public void sendPowerOnCommand() {
         System.out.println("发送了通电的命令");
         electricCommand.exec();
@@ -297,7 +295,7 @@ public class CommandController {
 
     public void sendPowerOffCommand() {
         System.out.println("发送了断电的命令");
-        electricCommand.exec();
+        electricCommand.unexec();
     }
 
     public void sendChannelUpCommand() {
@@ -307,7 +305,7 @@ public class CommandController {
 
     public void sendChannelDownCommand() {
         System.out.println("发送了频道-的命令");
-        channelCommand.exec();
+        channelCommand.unexec();
     }
 
     public void sendVolumeUpCommand() {
@@ -317,14 +315,14 @@ public class CommandController {
 
     public void sendVolumeDownCommand() {
         System.out.println("发送了音量-的命令");
-        volumeCommand.exec();
+        volumeCommand.unexec();
     }
 }
 ```
 
 >应用；
 ```
-package cn.http.test;
+ package cn.http.test;
 
 /**
  * 应用
@@ -366,7 +364,7 @@ public class Test {
 ```
 
 # 三 总结
->通过命令模式的使用，使得原本耦合的系统（策略模式中策略与策略使用者的强绑定）变得松散、自由，可以随意组合；  
->发令者与执行者彻底解耦，这实现了对各模块的自由扩展，松散的系统得以成就繁多模块解耦的最终目的；
+  >通过命令模式的使用，使得原本耦合的系统（策略模式中策略与策略使用者的强绑定）变得松散、自由，可以随意组合；  
+  >发令者与执行者彻底解耦，这实现了对各模块的自由扩展，松散的系统得以成就繁多模块解耦的最终目的；
 
-笔记整理来源：[技术文档](https://mp.weixin.qq.com/s/kMZUigTcYgvS5Y4yFVQQ8g)
+笔记整理来源：[技术文档](https://mp.weixin.qq.com/s/kMZUigTcYgvS5Y4yFVQQ8

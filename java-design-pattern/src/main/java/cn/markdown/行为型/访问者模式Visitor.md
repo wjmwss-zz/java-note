@@ -32,6 +32,13 @@ public class Test {
          */
 
         /**
+         * 访问者：其访问方法是传入访问者所需的实体类对象，
+         * “通过方法重载实现功能上的多态性，即根据不同的实体类对象，用重载来区分不同的逻辑实现方法”；
+         */
+        Visitor discountVisitor = new DiscountVisitor();
+        Visitor overdueVisitor = new OverdueVisitor();
+
+        /**
          * 实体类：既具有商品属性（商品命名、价格等），也具有接收者的功能；
          * 接收者：主动接收访问者（要访问实体类进行业务逻辑处理的类），接收了哪个访问者，则进行哪个访问者的业务逻辑处理；
          */
@@ -41,15 +48,7 @@ public class Test {
         List<Accepter> productAccepts = Arrays.asList(candyProductAccept, cookieProductAccept, fruitProductAccept);
 
         /**
-         * 访问者：其访问方法是传入访问者所需的实体类对象，
-         * “通过方法重载实现功能上的多态性，即根据不同的实体类对象，用重载来区分不同的逻辑实现方法”；
-         */
-        Visitor discountVisitor = new DiscountVisitor();
-        Visitor overdueVisitor = new OverdueVisitor();
-
-        /**
-         * 倘若不存在接收者（实体类不实现接收者接口），而是通过访问者主动访问不同的实体类来进行相应的逻辑处理时，
-         * 若需要批量处理，结果就会是访问者需要访问对应实体类进行逻辑处理时，无法确认对应实体类的类型，在编译时就会报错；
+         * 如果实体类不实现接收者接口，而是通过访问者主动访问不同的实体类来进行相应的逻辑处理时，由于方法的重载，会无法确认对应实体类的类型，在编译时就会报错；
          * 例子：
          */
 
@@ -58,10 +57,6 @@ public class Test {
         // FruitProduct fruitProduct = new FruitProduct();
         // CookieProduct cookieProduct = new CandyProduct();
         // List<Product> products = Arrays.asList(candyProduct, fruitProduct, cookieProduct);
-
-        //访问者
-        // Visitor discountVisitor = new DiscountVisitor();
-        // Visitor overdueVisitor = new OverdueVisitor();
 
         /**
          * 此时编译就会报错，visit是无法确认实体类的类型的；

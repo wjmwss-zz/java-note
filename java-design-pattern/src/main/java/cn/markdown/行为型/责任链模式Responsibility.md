@@ -5,7 +5,7 @@
 
 # 二 使用示例
 >审批工作流：  
->审批人的抽象：不同审批人的审批权限不同，因此审批的逻辑由其实现类实现，抽象类只需抽象不同角色的责任范围：自己只懂自己怎么审批（责任），自己处理不了的递交给上层（链条）；
+>审批人的抽象：不同审批人的审批权限不同，审批的逻辑由其实现类实现，抽象类抽象不同角色的责任范围：自己只懂自己怎么审批（责任），自己处理不了的递交给上层（链条）；
 ```
 package cn.http.test;
 
@@ -20,8 +20,9 @@ public abstract class Approver {
      * 审批人名字
      */
     protected String name;
+
     /**
-     * 下一个审批人/当前审批人的上级（不同角色的自己相互持有引用）
+     * 下一个审批人（不同角色的自己相互持有引用）
      */
     protected Approver nextApprover;
 
@@ -35,15 +36,15 @@ public abstract class Approver {
     }
 
     /**
-     * 设置下一个审批人/设置当前审批人的领导
+     * 设置下一个审批人
      *
      * @param nextApprover
      * @return
      */
     protected Approver setNextApprover(Approver nextApprover) {
         this.nextApprover = nextApprover;
-        // 返回下个审批人，可以进行链式编程
-        return this.nextApprover;
+        // 返回下个审批人，可以使用下个审批人的方法
+        return nextApprover;
     }
 
     /**
@@ -148,8 +149,6 @@ public class Test {
 
         /**
          * 审批人具有的责任链:<p>
-         * basicWorkerApprover.setNextApprover(new Manager("管理人员A")) : 表示基层人员的上级为管理人员（每次调用setNextApprover都会返回上级，链式调用）<p>
-         * .setNextApprover(new Ceo("CeoA"))：表示管理人员的上级为Ceo
          */
         basicWorkerApprover.setNextApprover(new Manager("管理人员A")).setNextApprover(new Ceo("CeoA"));
 
