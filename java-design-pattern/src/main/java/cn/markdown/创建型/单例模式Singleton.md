@@ -158,3 +158,9 @@ public enum TestEnumSingleton {
      */
 }
 ```
+
+# 三 类UML图
+>单例模式
+![单例模式] 
+
+[单例模式]:
