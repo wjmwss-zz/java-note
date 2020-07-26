@@ -1,4 +1,3 @@
-# Java8 新特性
 # 一 概述
 >Java 8 希望有自己的编程风格，并与 Java 7 区别开；它支持函数式编程，新的 JavaScript 引擎，新的日期 API，新的Stream API 等； 
 
@@ -625,4 +624,4 @@ class UserPo implements Serializable {
 >* 1、list.stream()后，里面操作的元素实际上就是list里面的单个元素；
 >* 2、一个流只要执行了终止操作，就无法再次执行中间操作，要执行中间操作必须先创建流式；
 
-笔记整理来源：[技术文档4](https://www.cnblogs.com/wuhenzhidu/p/10740091.html)
+源码地址：[我的GitHub](https://github.com/wjmwss/java-program)   
