@@ -69,6 +69,7 @@ protected String resolvePath(String path) {
     return getEnironment().resolveRequiredPlaceholders(path);
 }
 ```
+
 #### 1.2 getEnironment()
 >获取环境变量
 ```
@@ -87,7 +88,6 @@ public ConfigurableEnvironment getEnvironment() {
 
 >`getEnironment().resolveRequiredPlaceholders(path);`中的`getEnironment()`返回了一个`StandardEnvironment`类，这个类中的`customizePropertySources()`就会往资源列表中添加Java进程中的变量和系统的环境变量：
 ```
-
 protected void customizePropertySources(MutablePropertySources propertySources) {
     propertySources.addLast(new MapPropertySource(SYSTEM_PROPERTIES_PROPERTY_SOURCE_NAME, getSystemProperties()));
     propertySources.addLast(new SystemEnvironmentPropertySource(SYSTEM_ENVIRONMENT_PROPERTY_SOURCE_NAME, getSystemEnvironment()));
