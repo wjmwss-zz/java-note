@@ -8,8 +8,8 @@ import cn.pattern.创建型.factory.abstracts.product.Food;
 /**
  * 抽象工厂模式应用
  *
- * @author:wjm
- * @date:2020/6/30 23:02
+ * @Author: wjm
+ * @date: 2020/6/30 23:02
  */
 public class Test {
     public static void main(String[] args) {

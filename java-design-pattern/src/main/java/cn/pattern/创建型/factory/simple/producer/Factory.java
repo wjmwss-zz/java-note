@@ -5,8 +5,8 @@ import cn.pattern.创建型.factory.simple.product.Food;
 /**
  * 生产者：工厂
  *
- * @author:wjm
- * @date:2020/6/30 22:57
+ * @Author: wjm
+ * @date: 2020/6/30 22:57
  */
 public interface Factory {
     /**

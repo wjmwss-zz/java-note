@@ -3,8 +3,8 @@ package cn.pattern.创建型.factory.simple.product;
 /**
  * 产出物：苹果
  *
- * @author:wjm
- * @date:2020/6/30 22:54
+ * @Author: wjm
+ * @date: 2020/6/30 22:54
  */
 public class Apple implements Food {
     @Override

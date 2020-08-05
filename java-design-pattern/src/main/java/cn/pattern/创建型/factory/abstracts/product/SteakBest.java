@@ -3,8 +3,8 @@ package cn.pattern.创建型.factory.abstracts.product;
 /**
  * 产出物：一级牛排
  *
- * @author:wjm
- * @date:2020/7/1 20:24
+ * @Author: wjm
+ * @date: 2020/7/1 20:24
  */
 public class SteakBest implements Food{
     @Override
