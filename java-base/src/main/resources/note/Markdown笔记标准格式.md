@@ -31,3 +31,7 @@ fff | ggg| hhh | iii | 000|
 参考资料主要有：  
 * [技术文档1](https://github.com/wjmwss/java-design-pattern)  
 * [技术文档2](https://github.com/wjmwss/java-design-pattern)
+
+
+
+<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gimry2ooarj30jg0g2dkw.jpg" alt="图例1" width="500" height="313"/>
