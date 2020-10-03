@@ -10,7 +10,7 @@
 
     <parent>
         <groupId>cn.wjm</groupId>
-        <artifactId>java-program</artifactId>
+        <artifactId>java-note</artifactId>
         <version>1.0</version>
     </parent>
 </project>

@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
 
-    <name>java-program</name>
-    <artifactId>java-program</artifactId>
+    <name>java-note</name>
+    <artifactId>java-note</artifactId>
     <groupId>cn.wjm</groupId>
     <version>1.0</version>
 
