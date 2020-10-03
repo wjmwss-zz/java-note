@@ -41,7 +41,7 @@ return new ClassPathContextResource(path, getClassLoader());
 "http://www.baidu.com" : UrlResource 类型；
 
 
-针对第一个，可以看到spring是没有很好地处理的，在spring处理第一个的时候，最终是抛了异常，使用了上述过程中“最后”的一种方式来创建，因此最终被创建成了ClassPathContextResource的资源，但是我们更希望他被处理成FileSystemResource的类型：org.springframework.core.io.FileSystemResourceLoader，这个类继承 DefaultResourceLoader ，且覆写了 #getResourceByPath(String) 方法，使之从文件系统加载资源并以 FileSystemResource 类型返回，这样我们就可以得到想要的资源类型；
+针对第一个，可以看到spring是没有很好地处理的，在spring处理第一个的时候，最终是抛了异常，使用了上述过程中“最后”的一种方式来创建，因此最终被创建成了ClassPathContextResource的资源，但是我们更希望他被处理成FileSystemResource的类型，org.springframework.core.io.FileSystemResourceLoader，这个类继承 DefaultResourceLoader ，且覆写了 #getResourceByPath(String) 方法，使之从文件系统加载资源并以 FileSystemResource 类型返回，这样我们就可以得到想要的资源类型；
 
 
 ProtocolResolver自定义接口：
