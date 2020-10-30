@@ -3,3 +3,7 @@ DefaultBeanDefinitionDocumentReader
 BeanDefinitionReaderUtils
 AbstractBeanDefinitionReader
 BeanDefinitionParserDelegate
+BeanDefinitionRegistry
+DefaultListableBeanFactory
+BeanMetadataAttributeAccessor
+AttributeAccessorSupport

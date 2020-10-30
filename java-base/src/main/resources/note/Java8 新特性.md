@@ -171,7 +171,7 @@ public class Lambda1 {
 ## 2.3 Java8内置的函数式接口
 >* 四大核心函数式接口：
 >   * Consumer<T>    : 消费型接口（无返回值，有去无回）void accept(T t);
->   * Supplier<T>    : 供给型接口 T get();
+>   * Supplier<T>    : 供给型接口 （无去有回）T get();
 >   * Function<T, R> : 函数型接口 R apply(T t);
 >   * Predicate<T>   : 断言型接口 boolean test(T t);
 >* 对应的增强型：
