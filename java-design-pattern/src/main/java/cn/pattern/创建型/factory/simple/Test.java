@@ -7,8 +7,8 @@ import cn.pattern.创建型.factory.simple.product.Food;
 /**
  * 简单工厂模式应用
  *
- * @Author: wjm
- * @date: 2020/6/30 23:02
+ * @author wjm
+ * @since 2020/6/30 23:02
  */
 public class Test {
     public static void main(String[] args) {

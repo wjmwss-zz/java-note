@@ -3,8 +3,8 @@ package cn.pattern.创建型.factory.abstracts.product;
 /**
  * 产出物：食品接口
  *
- * @Author: wjm
- * @date: 2020/7/1 20:24
+ * @author wjm
+ * @since 2020/7/1 20:24
  */
 public interface Food {
     /**

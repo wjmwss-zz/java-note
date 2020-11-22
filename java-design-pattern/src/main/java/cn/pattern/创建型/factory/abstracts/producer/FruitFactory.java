@@ -8,8 +8,8 @@ import cn.pattern.创建型.factory.abstracts.product.FruitWorst;
 /**
  * 生产者：不同级别的水果
  *
- * @Author: wjm
- * @date: 2020/7/1 20:18
+ * @author wjm
+ * @since 2020/7/1 20:18
  */
 public class FruitFactory implements Factory{
 

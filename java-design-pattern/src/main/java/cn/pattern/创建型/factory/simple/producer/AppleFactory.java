@@ -6,8 +6,8 @@ import cn.pattern.创建型.factory.simple.product.Food;
 /**
  * 生产者：苹果
  *
- * @Author: wjm
- * @date: 2020/6/30 22:58
+ * @author wjm
+ * @since 2020/6/30 22:58
  */
 public class AppleFactory implements Factory {
     @Override
