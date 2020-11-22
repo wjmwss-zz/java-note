@@ -45,5 +45,6 @@
     <modules>
         <module>java-design-pattern</module>
         <module>java-base</module>
+        <module>thread</module>
     </modules>
 </project>
