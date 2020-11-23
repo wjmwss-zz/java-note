@@ -40,6 +40,12 @@
             <version>3.17</version>
             <scope>compile</scope>
         </dependency>
+        <!-- java 对象内存布局-->
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.9</version>
+        </dependency>
     </dependencies>
 
     <modules>
